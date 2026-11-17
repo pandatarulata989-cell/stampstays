@@ -1,0 +1,1196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Properties — Stamp Stays, Mussoorie</title>
+<meta name="description" content="Browse all Stamp Stays properties in Mussoorie, from mountain villas and heritage homes to boutique suites. Find your stay and book directly.">
+<meta name="theme-color" content="#1B3A6B">
+<link rel="canonical" href="https://www.stampstays.com/property.html">
+<link rel="icon" type="image/png" href="https://www.stampstays.com/stamp_stays_logo.png">
+<link rel="apple-touch-icon" href="https://www.stampstays.com/stamp_stays_logo.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Stamp Stays">
+<meta property="og:url" content="https://www.stampstays.com/property.html">
+<meta property="og:title" content="Our Properties — Stamp Stays, Mussoorie">
+<meta property="og:description" content="Browse all Stamp Stays properties in Mussoorie, from mountain villas and heritage homes to boutique suites. Find your stay and book directly.">
+<meta property="og:image" content="https://www.stampstays.com/social-preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Stamp Stays — curated mountain homes in Mussoorie">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Our Properties — Stamp Stays, Mussoorie">
+<meta name="twitter:description" content="Browse all Stamp Stays properties in Mussoorie, from mountain villas and heritage homes to boutique suites. Find your stay and book directly.">
+<meta name="twitter:image" content="https://www.stampstays.com/social-preview.jpg">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --ink:      #1B3A6B;
+  --ink-mid:  #2E5490;
+  --ink-soft: #4A6FA5;
+  --sky:      #9EB3C8;
+  --mist:     #C8D4DF;
+  --cream:    #F0EDE6;
+  --cream-d:  #E8E2D6;
+  --cream-dd: #D4CFC4;
+  --paper:    #FAF8F4;
+  --warm:     #B8975A;
+  --muted:    #7A8898;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans:  'DM Sans', system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; max-width: 100%; overflow-x: hidden; font-size: 17px; }
+body {
+  background: var(--paper); color: var(--ink);
+  font-family: var(--sans); font-weight: 300;
+  max-width: 100%; overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NAV */
+nav {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 0.9rem 2.5rem;
+  background: rgba(250,248,244,0.97);
+  backdrop-filter: blur(12px);
+  border-bottom: 0.5px solid var(--cream-dd);
+  box-shadow: 0 4px 20px rgba(27,58,107,0.04);
+  transition: padding 0.3s, background 0.3s;
+}
+.nav-logo {
+  display: flex; align-items: center; gap: 0.85rem;
+  text-decoration: none; flex-shrink: 0;
+}
+.nav-logo-img {
+  width: 58px; height: 58px; object-fit: contain;
+  transition: width 0.3s, height 0.3s, transform 0.3s;
+}
+nav.scrolled .nav-logo-img { width: 46px; height: 46px; }
+.nav-logo:hover .nav-logo-img { transform: scale(1.05); }
+.nav-logo-text {
+  font-family: var(--serif); font-size: 1.4rem; font-weight: 400;
+  letter-spacing: 0.08em; color: var(--ink); white-space: nowrap;
+}
+.nav-links { display: flex; align-items: center; gap: 2.2rem; list-style: none; }
+.nav-links a {
+  font-size: 0.72rem; letter-spacing: 0.13em; text-transform: uppercase;
+  color: var(--muted); text-decoration: none; transition: color 0.25s;
+  font-weight: 400; position: relative;
+}
+.nav-links a:hover, .nav-links a.active { color: var(--ink); font-weight: 500; }
+.nav-links a.active::after {
+  content: ''; position: absolute; bottom: -5px; left: 0; right: 0;
+  height: 1.5px; background: var(--warm); border-radius: 1px;
+}
+.nav-right {
+  display: flex; align-items: center; gap: 0.8rem; flex-shrink: 0;
+}
+.nav-cta {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 0.68rem; letter-spacing: 0.14em; text-transform: uppercase;
+  padding: 0.6rem 1.4rem; border: 1px solid var(--ink);
+  color: var(--ink); text-decoration: none; border-radius: 2px; transition: all 0.3s;
+  font-weight: 500; white-space: nowrap; box-sizing: border-box; line-height: 1;
+}
+.nav-cta:hover { background: var(--ink); color: var(--cream); }
+.cta-mobile { display: none; }
+
+/* Mobile Menu Hamburger Button */
+.nav-toggle {
+  display: none;
+  flex-direction: column; justify-content: space-between;
+  width: 26px; height: 19px; background: transparent;
+  border: none; cursor: pointer; padding: 0; z-index: 102;
+}
+.nav-toggle span {
+  width: 100%; height: 2px; background: var(--ink);
+  border-radius: 2px; transition: all 0.3s ease;
+  transform-origin: center;
+}
+.nav-toggle.open span:nth-child(1) {
+  transform: translateY(8.5px) rotate(45deg);
+}
+.nav-toggle.open span:nth-child(2) {
+  opacity: 0; transform: scaleX(0);
+}
+.nav-toggle.open span:nth-child(3) {
+  transform: translateY(-8.5px) rotate(-45deg);
+}
+
+/* Mobile Nav Backdrop Overlay */
+.nav-backdrop {
+  display: none; position: fixed; inset: 0;
+  background: rgba(12, 24, 43, 0.45);
+  backdrop-filter: blur(3px); z-index: 100;
+  opacity: 0; transition: opacity 0.3s ease;
+}
+.nav-backdrop.open { display: block; opacity: 1; }
+
+/* HERO HEADER */
+.page-hero {
+  position: relative;
+  padding: 7.5rem 2.5rem 3.5rem;
+  background-color: var(--cream);
+  background-image: 
+    radial-gradient(circle at 90% 20%, rgba(200,212,223,0.35) 0%, transparent 60%),
+    linear-gradient(to bottom, rgba(240,237,230,0.92), rgba(240,237,230,0.98)),
+    url('delta%20cottage/Delta.png');
+  background-size: cover;
+  background-position: center;
+  border-bottom: 0.5px solid var(--cream-dd);
+}
+.hero-lines {
+  position: absolute; right: 0; top: 0; bottom: 0; width: 45%;
+  pointer-events: none; overflow: hidden;
+}
+.hero-line {
+  position: absolute; left: 0; right: 0; height: 1px;
+  background: var(--cream-dd); opacity: 0.45;
+}
+.page-hero-inner {
+  max-width: 1240px; margin: 0 auto; position: relative; z-index: 2;
+}
+.breadcrumb {
+  display: flex; align-items: center; gap: 0.55rem;
+  font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 1.2rem;
+}
+.breadcrumb a { color: var(--muted); text-decoration: none; transition: color 0.2s; }
+.breadcrumb a:hover { color: var(--ink); }
+.breadcrumb span { color: var(--cream-dd); }
+
+.hero-eyebrow {
+  font-size: 0.68rem; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--ink-soft); margin-bottom: 0.8rem;
+  display: flex; align-items: center; gap: 0.75rem; font-weight: 500;
+}
+.hero-eyebrow::before { content:''; display:block; width:28px; height:1px; background:var(--ink-soft); }
+.page-hero-title {
+  font-family: var(--serif); font-size: clamp(2.3rem, 4.5vw, 3.8rem);
+  font-weight: 300; line-height: 1.1; color: var(--ink); margin-bottom: 1.1rem;
+}
+.page-hero-title em { font-style: italic; color: var(--ink-soft); }
+.page-hero-sub {
+  font-size: 0.92rem; line-height: 1.85; color: var(--muted); max-width: 680px; margin-bottom: 2rem;
+}
+
+/* FILTER CONTROLS */
+.filter-section {
+  display: flex; align-items: center; justify-content: space-between;
+  flex-wrap: wrap; gap: 1.2rem;
+  padding-top: 1.6rem; border-top: 0.5px solid var(--cream-dd);
+}
+.filter-pills {
+  display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap;
+}
+.filter-btn {
+  font-family: var(--sans); font-size: 0.68rem; letter-spacing: 0.12em; text-transform: uppercase;
+  background: rgba(250,248,244,0.7); color: var(--ink);
+  border: 1px solid var(--cream-dd); border-radius: 20px;
+  padding: 0.45rem 1rem; cursor: pointer; transition: all 0.25s ease;
+  font-weight: 400;
+}
+.filter-btn:hover {
+  background: var(--cream-d); border-color: var(--ink-soft);
+}
+.filter-btn.active {
+  background: var(--ink); color: var(--cream); border-color: var(--ink);
+  font-weight: 500; box-shadow: 0 2px 8px rgba(27,58,107,0.18);
+}
+
+.search-box-wrap {
+  display: flex; align-items: center; gap: 0.6rem;
+  background: rgba(250,248,244,0.9); border: 1px solid var(--cream-dd);
+  border-radius: 20px; padding: 0.35rem 0.9rem; transition: border-color 0.2s;
+}
+.search-box-wrap:focus-within {
+  border-color: var(--ink); box-shadow: 0 0 0 2px rgba(27,58,107,0.08);
+}
+.search-box-wrap svg { width: 14px; height: 14px; fill: var(--muted); }
+.search-input {
+  border: none; background: transparent; outline: none;
+  font-family: var(--sans); font-size: 0.76rem; color: var(--ink);
+  width: 150px;
+}
+.search-input::placeholder { color: var(--muted); opacity: 0.75; }
+
+.status-counter-bar {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 1rem 0 0; font-size: 0.72rem; letter-spacing: 0.08em;
+  text-transform: uppercase; color: var(--muted);
+}
+.status-count { color: var(--ink); font-weight: 600; }
+
+/* PROPERTIES MAIN SECTION */
+.properties-main {
+  padding: 3rem 2.5rem 5rem;
+  max-width: 1240px; margin: 0 auto;
+}
+
+/* 4 COLUMNS DESKTOP, 2 COLUMNS MOBILE */
+.prop-grid-all {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+}
+
+.prop-card {
+  border-radius: 4px; overflow: hidden; display: flex; flex-direction: column;
+  transition: transform 0.35s ease, box-shadow 0.35s ease; position: relative;
+  background: var(--cream);
+  border: 0.5px solid var(--cream-dd);
+  min-width: 0; /* Prevents flex/grid children from expanding container */
+}
+.prop-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 14px 35px rgba(27,58,107,0.12);
+}
+.prop-card:hover .prop-photo { transform: scale(1.06); }
+.prop-card:hover .prop-stamp-hover { opacity: 1; transform: scale(1) rotate(-8deg); }
+
+.prop-img-wrap {
+  overflow: hidden; aspect-ratio: 4/3; border-radius: 4px 4px 0 0;
+  position: relative; background: #C8D4DF; width: 100%;
+}
+.prop-photo {
+  width: 100%; height: 100%; object-fit: cover; display: block;
+  transition: transform 0.65s cubic-bezier(0.25,0.46,0.45,0.94);
+}
+.prop-stamp-hover {
+  position: absolute; top: 0.75rem; right: 0.75rem; z-index: 2;
+  width: 44px; height: 44px; object-fit: contain;
+  opacity: 0; transform: scale(0.7) rotate(0deg);
+  transition: opacity 0.35s, transform 0.4s cubic-bezier(0.34,1.56,0.64,1);
+  filter: drop-shadow(0 2px 5px rgba(0,0,0,0.25));
+  pointer-events: none;
+}
+
+.prop-body {
+  padding: 1.15rem 1.05rem 1.25rem; flex: 1; display: flex; flex-direction: column;
+  min-width: 0;
+}
+.prop-location {
+  font-size: 0.62rem; letter-spacing: 0.14em; text-transform: uppercase;
+  color: var(--muted); margin-bottom: 0.25rem; font-weight: 400;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.prop-name {
+  font-family: var(--serif); font-size: 1.26rem; font-weight: 400;
+  color: var(--ink); margin-bottom: 0.2rem; line-height: 1.2;
+}
+.prop-tagline {
+  font-size: 0.73rem; color: var(--ink-soft); margin-bottom: 0.45rem;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.prop-meta {
+  font-size: 0.71rem; color: var(--muted); margin-bottom: 0.75rem; line-height: 1.35;
+}
+.prop-review-link {
+  display: inline-flex; align-items: center; gap: 0.35rem;
+  font-size: 0.7rem; color: var(--ink-soft); font-weight: 500;
+  background: rgba(158,179,200,0.16); text-decoration: none;
+  padding: 0.3rem 0.55rem; border-radius: 2px; margin-bottom: 0.9rem;
+  align-self: flex-start; white-space: nowrap; max-width: 100%;
+  overflow: hidden; text-overflow: ellipsis;
+}
+.prop-review-link:hover { color: var(--ink); background: rgba(158,179,200,0.28); }
+
+.prop-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  padding-top: 0.8rem; border-top: 0.5px solid var(--cream-dd); margin-top: auto;
+}
+.prop-price {
+  font-family: var(--serif); font-size: 1.12rem; color: var(--ink); font-weight: 400;
+  white-space: nowrap;
+}
+.prop-price span {
+  font-size: 0.64rem; font-family: var(--sans); color: var(--muted); font-weight: 300;
+}
+
+.prop-footer {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 0.6rem; flex-wrap: wrap;
+  padding-top: 0.85rem; border-top: 0.5px solid var(--cream-dd); margin-top: auto;
+}
+.prop-price { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); white-space: nowrap; }
+.prop-price span { font-size: 0.65rem; font-family: var(--sans); color: var(--muted); }
+.prop-action-btns {
+  display: inline-flex; gap: 0.45rem; align-items: center; flex-shrink: 0;
+}
+.prop-details-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 0.62rem; letter-spacing: 0.1em; text-transform: uppercase;
+  color: var(--ink-soft); text-decoration: none; font-weight: 500;
+  padding: 0.45rem 0.65rem; border: 1px solid var(--cream-dd); border-radius: 2px;
+  transition: all 0.2s; white-space: nowrap; background: rgba(250,248,244,0.6);
+  box-sizing: border-box; line-height: 1;
+}
+.prop-details-btn:hover {
+  border-color: var(--ink); color: var(--ink); background: var(--paper);
+}
+.prop-book-btn {
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase;
+  background: var(--ink); color: var(--cream); text-decoration: none; font-weight: 500;
+  padding: 0.45rem 0.85rem; border: 1px solid var(--ink); border-radius: 2px; transition: all 0.2s;
+  box-shadow: 0 2px 7px rgba(27,58,107,0.15); white-space: nowrap;
+  box-sizing: border-box; line-height: 1;
+}
+.prop-book-btn:hover {
+  background: var(--ink-mid); transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(27,58,107,0.22);
+}
+
+/* NO RESULTS STATE */
+.no-results {
+  grid-column: 1 / -1; text-align: center; padding: 4rem 1rem;
+  background: var(--cream); border: 0.5px dashed var(--cream-dd); border-radius: 4px;
+}
+.no-results h3 { font-family: var(--serif); font-size: 1.6rem; color: var(--ink); margin-bottom: 0.5rem; }
+.no-results p { font-size: 0.85rem; color: var(--muted); margin-bottom: 1.2rem; }
+.reset-filter-btn {
+  font-family: var(--sans); font-size: 0.7rem; letter-spacing: 0.14em; text-transform: uppercase;
+  background: var(--ink); color: var(--cream); border: none; padding: 0.6rem 1.4rem;
+  border-radius: 2px; cursor: pointer; transition: background 0.2s;
+}
+
+/* TRUST BANNER */
+.trust-strip {
+  background: var(--ink); color: var(--cream);
+  padding: 4rem 2.5rem; position: relative; overflow: hidden;
+}
+.trust-inner {
+  max-width: 1200px; margin: 0 auto;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 2.5rem;
+}
+.trust-card { display: flex; flex-direction: column; gap: 0.5rem; }
+.trust-card-icon {
+  width: 32px; height: 32px; object-fit: contain; filter: brightness(10);
+  opacity: 0.85; margin-bottom: 0.5rem;
+}
+.trust-card-title {
+  font-family: var(--serif); font-size: 1.2rem; font-weight: 400; color: var(--cream);
+}
+.trust-card-desc {
+  font-size: 0.8rem; line-height: 1.7; color: var(--sky); opacity: 0.85;
+}
+
+/* CONCIERGE ASSISTANCE CTA */
+.concierge-band {
+  background: var(--cream); border-top: 0.5px solid var(--cream-dd);
+  border-bottom: 0.5px solid var(--cream-dd); padding: 4.5rem 2.5rem; text-align: center;
+}
+.concierge-inner { max-width: 640px; margin: 0 auto; }
+.concierge-seal { width: 56px; height: 56px; object-fit: contain; opacity: 0.45; margin-bottom: 1.2rem; }
+.concierge-eyebrow {
+  font-size: 0.65rem; letter-spacing: 0.24em; text-transform: uppercase;
+  color: var(--ink-soft); margin-bottom: 0.6rem; font-weight: 500;
+}
+.concierge-title {
+  font-family: var(--serif); font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+  font-weight: 300; color: var(--ink); line-height: 1.2; margin-bottom: 1rem;
+}
+.concierge-title em { font-style: italic; color: var(--ink-soft); }
+.concierge-body {
+  font-size: 0.88rem; line-height: 1.85; color: var(--muted); margin-bottom: 2rem;
+}
+.concierge-actions {
+  display: flex; align-items: center; justify-content: center; gap: 1rem; flex-wrap: wrap;
+}
+.concierge-btn-pri {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  background: var(--ink); color: var(--cream); text-decoration: none;
+  padding: 0.8rem 1.8rem; border-radius: 2px; transition: all 0.25s;
+  font-weight: 500; box-shadow: 0 4px 14px rgba(27,58,107,0.18);
+}
+.concierge-btn-pri:hover { background: var(--ink-mid); transform: translateY(-1px); }
+.concierge-btn-sec {
+  font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase;
+  background: transparent; color: var(--ink); text-decoration: none;
+  padding: 0.8rem 1.8rem; border-radius: 2px; border: 1px solid var(--cream-dd);
+  transition: all 0.25s; font-weight: 500;
+}
+.concierge-btn-sec:hover { border-color: var(--ink); }
+
+/* FOOTER */
+footer {
+  background: var(--ink); color: var(--cream); padding: 5rem 2.5rem 2.5rem;
+  position: relative; overflow: hidden;
+}
+.footer-wm {
+  position: absolute; right: -50px; bottom: -50px; width: 320px; height: 320px;
+  object-fit: contain; opacity: 0.035; pointer-events: none;
+}
+.footer-inner {
+  max-width: 1100px; margin: 0 auto; display: grid; grid-template-columns: 2fr 1.2fr 1fr; gap: 3rem;
+  padding-bottom: 2.5rem; border-bottom: 0.5px solid rgba(200,212,223,0.12); margin-bottom: 1.5rem;
+  position: relative; z-index: 1;
+}
+.footer-brand-wrap { display: flex; align-items: center; gap: 0.8rem; margin-bottom: 0.8rem; }
+.footer-logo { width: 38px; height: 38px; object-fit: contain; filter: brightness(10); opacity: 0.7; }
+.footer-brand { font-family: var(--serif); font-size: 1.3rem; font-weight: 400; color: var(--cream); letter-spacing: 0.08em; }
+.footer-tagline { font-size: 0.82rem; line-height: 1.75; color: var(--sky); opacity: 0.75; max-width: 265px; }
+.footer-col-title { font-size: 0.58rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--sky); margin-bottom: 1rem; opacity: 0.7; font-weight: 500; }
+.footer-links { list-style: none; }
+.footer-links li { margin-bottom: 0.55rem; }
+.footer-links a { font-size: 0.82rem; color: var(--sky); opacity: 0.75; text-decoration: none; transition: color 0.2s, opacity 0.2s; }
+.footer-links a:hover { color: var(--cream); opacity: 1; }
+.footer-bottom {
+  max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between;
+  align-items: center; font-size: 0.68rem; color: rgba(200,212,223,0.35); position: relative; z-index: 1;
+}
+.footer-mrz {
+  font-family: 'Courier New', monospace; font-size: 0.58rem; color: rgba(200,212,223,0.18);
+  letter-spacing: 0.05em; margin-top: 1.2rem;
+}
+
+/* ANIMATIONS */
+.fade-up {
+  opacity: 0; transform: translateY(20px);
+  transition: opacity 0.65s ease, transform 0.65s ease;
+}
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+.d1 { transition-delay: 0.08s; } .d2 { transition-delay: 0.16s; } .d3 { transition-delay: 0.24s; }
+
+/* ========================================================= */
+/* FULLY RESPONSIVE BREAKPOINTS (DESKTOP -> TABLET -> MOBILE) */
+/* ========================================================= */
+
+/* Mid-Screens & Medium Tablets */
+@media (max-width: 1120px) {
+  nav { padding: 0.85rem 1.8rem; }
+  .page-hero { padding: 7rem 1.8rem 3rem; }
+  .properties-main { padding: 2.5rem 1.8rem 4.5rem; }
+  .prop-grid-all {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.25rem;
+  }
+  .trust-strip { padding: 3.5rem 1.8rem; }
+  .trust-inner { grid-template-columns: repeat(2, 1fr); gap: 2rem; }
+  footer { padding: 4rem 1.8rem 2rem; }
+}
+
+/* Tablets (portrait) & Mobile screens: 768px and below */
+@media (max-width: 768px) {
+  /* Navigation */
+  nav {
+    padding: 0.75rem 1.2rem;
+  }
+  .nav-logo-text { font-size: 1.25rem; }
+  .nav-logo-img { width: 56px; height: 56px; }
+
+  /* Mobile Slide-Out Drawer Navigation */
+  .nav-toggle { display: flex; }
+  .nav-links {
+    position: fixed;
+    top: 0; right: -100%;
+    width: min(280px, 80vw); height: 100vh;
+    background: rgba(250, 248, 244, 0.98);
+    backdrop-filter: blur(16px);
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 5.5rem 2rem 2.5rem;
+    gap: 1.6rem;
+    box-shadow: -8px 0 25px rgba(27, 58, 107, 0.12);
+    transition: right 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 101;
+    border-left: 0.5px solid var(--cream-dd);
+  }
+  .nav-links.open { right: 0; }
+  .nav-links a {
+    font-size: 0.88rem; letter-spacing: 0.14em;
+    color: var(--ink);
+  }
+  .nav-links a.active::after { bottom: -4px; }
+  .nav-cta {
+    padding: 0.45rem 0.85rem; font-size: 0.62rem; letter-spacing: 0.1em;
+  }
+
+  /* Hero Section */
+  .page-hero {
+    padding: 5.8rem 1rem 2.2rem;
+  }
+  .breadcrumb {
+    font-size: 0.62rem; gap: 0.4rem; margin-bottom: 0.8rem;
+  }
+  .hero-eyebrow {
+    font-size: 0.6rem; letter-spacing: 0.18em; margin-bottom: 0.6rem;
+  }
+  .hero-eyebrow::before { width: 20px; }
+  .page-hero-title {
+    font-size: clamp(1.85rem, 6.5vw, 2.7rem);
+    margin-bottom: 0.8rem;
+  }
+  .page-hero-sub {
+    font-size: 0.82rem; line-height: 1.65; margin-bottom: 1.4rem;
+  }
+
+  /* Filter Controls Mobile Scrollable */
+  .filter-section {
+    flex-direction: column; align-items: stretch; gap: 0.85rem;
+    padding-top: 1.2rem;
+  }
+  .filter-pills {
+    display: flex; gap: 0.4rem;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.35rem; scrollbar-width: none;
+    width: 100%;
+  }
+  .filter-pills::-webkit-scrollbar { display: none; }
+  .filter-btn {
+    flex-shrink: 0; white-space: nowrap;
+    padding: 0.4rem 0.8rem; font-size: 0.62rem;
+  }
+  .search-box-wrap {
+    width: 100%; box-sizing: border-box;
+  }
+  .search-input { width: 100%; font-size: 0.74rem; }
+  .status-counter-bar {
+    font-size: 0.65rem; gap: 0.3rem;
+  }
+
+  /* PROPERTIES GRID: STRICT 2 COLUMNS ON MOBILE */
+  .properties-main {
+    padding: 1.2rem 0.75rem 3.5rem;
+  }
+  .prop-grid-all {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.65rem;
+    width: 100%;
+  }
+
+  .prop-card {
+    border-radius: 4px;
+    background: var(--cream);
+  }
+  .prop-img-wrap {
+    aspect-ratio: 4/3;
+  }
+  .prop-stamp-hover {
+    width: 28px; height: 28px; top: 0.4rem; right: 0.4rem;
+  }
+
+  .prop-body {
+    padding: 0.65rem 0.55rem 0.75rem;
+  }
+  .prop-location {
+    font-size: 0.62rem; letter-spacing: 0.05em; margin-bottom: 0.15rem;
+  }
+  .prop-name {
+    font-size: clamp(1rem, 3.5vw, 1.18rem);
+    line-height: 1.15; margin-bottom: 0.18rem;
+    word-break: break-word;
+  }
+  .prop-tagline {
+    font-size: 0.72rem; margin-bottom: 0.3rem;
+  }
+  .prop-meta {
+    font-size: 0.68rem; line-height: 1.4; margin-bottom: 0.4rem;
+  }
+  .prop-review-link {
+    font-size: 0.68rem; padding: 0.16rem 0.4rem; margin-bottom: 0.55rem;
+  }
+
+  .prop-footer {
+    flex-direction: column; align-items: stretch; gap: 0.5rem;
+    padding-top: 0.65rem;
+  }
+  .prop-price {
+    font-size: 0.96rem; line-height: 1.1;
+  }
+  .prop-price span { font-size: 0.66rem; }
+
+  .prop-action-btns {
+    display: grid; grid-template-columns: 1fr 1fr;
+    gap: 0.4rem; width: 100%;
+  }
+  .prop-details-btn, .prop-book-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0.5rem 0.3rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.05em;
+    border-radius: 2px;
+    white-space: nowrap;
+    box-sizing: border-box;
+    min-width: 0;
+  }
+
+  /* Trust Section Mobile */
+  .trust-strip { padding: 2.8rem 1rem; }
+  .trust-inner { grid-template-columns: 1fr; gap: 1.5rem; }
+  .trust-card-title { font-size: 1.1rem; }
+  .trust-card-desc { font-size: 0.76rem; }
+
+  /* Concierge Mobile */
+  .concierge-band { padding: 3rem 1rem; }
+  .concierge-title { font-size: clamp(1.6rem, 5.5vw, 2.2rem); }
+  .concierge-body { font-size: 0.82rem; margin-bottom: 1.5rem; }
+  .concierge-actions { flex-direction: column; width: 100%; gap: 0.65rem; }
+  .concierge-btn-pri, .concierge-btn-sec {
+    width: 100%; text-align: center; box-sizing: border-box;
+    padding: 0.75rem 1rem; font-size: 0.68rem;
+  }
+
+  /* Footer Mobile */
+  footer { padding: 3.5rem 1rem 2rem; }
+  .footer-inner { grid-template-columns: 1fr; gap: 2rem; padding-bottom: 2rem; }
+  .footer-bottom {
+    flex-direction: column; gap: 0.5rem; text-align: center;
+  }
+  .footer-wm { display: none; }
+  .footer-mrz {
+    font-size: 0.5rem; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+}
+
+@media (max-width: 480px) {
+  .cta-desktop { display: none; }
+  .cta-mobile { display: inline; }
+  .nav-cta { padding: 0.45rem 0.75rem; font-size: 0.62rem; }
+}
+
+/* Extra Compact Phones: <= 380px */
+@media (max-width: 380px) {
+  nav { padding: 0.65rem 0.85rem; }
+  .nav-logo-img { width: 40px; height: 40px; }
+  .nav-logo-text { font-size: 1.1rem; }
+  .nav-cta { padding: 0.4rem 0.65rem; font-size: 0.58rem; }
+
+  .page-hero { padding: 5.2rem 0.85rem 2rem; }
+  .properties-main { padding: 1rem 0.55rem 3rem; }
+  .prop-grid-all { grid-template-columns: 1fr; gap: 0.75rem; }
+  .prop-body { padding: 0.75rem 0.65rem 0.8rem; }
+  .prop-name { font-size: 1.05rem; }
+  .prop-price { font-size: 1.05rem; }
+  .prop-action-btns { grid-template-columns: 1fr 1fr; }
+  .prop-details-btn, .prop-book-btn {
+    font-size: 0.68rem; padding: 0.52rem 0.5rem;
+  }
+}
+</style>
+</head>
+<body>
+
+<!-- Backdrop for mobile drawer navigation -->
+<div class="nav-backdrop" id="navBackdrop" onclick="closeMobileNav()"></div>
+
+<!-- NAV -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo">
+    <img class="nav-logo-img" src="stamp_stays_logo.png" alt="Stamp Stays Logo">
+    <span class="nav-logo-text">Stamp Stays</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html" onclick="closeMobileNav()">Home</a></li>
+    <li><a href="property.html" class="active" onclick="closeMobileNav()">Properties</a></li>
+    <li><a href="index.html#story" onclick="closeMobileNav()">Our Story</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="https://myair.link/stamp-stays" target="_blank" rel="noopener noreferrer" class="nav-cta">
+      <span class="cta-desktop">Booking Portal ↗</span>
+      <span class="cta-mobile">Book Now ↗</span>
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" onclick="toggleMobileNav()">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- HERO HEADER -->
+<header class="page-hero">
+  <div class="hero-lines">
+    <div class="hero-line" style="top:20%"></div>
+    <div class="hero-line" style="top:36%"></div>
+    <div class="hero-line" style="top:52%"></div>
+    <div class="hero-line" style="top:68%"></div>
+    <div class="hero-line" style="top:84%"></div>
+  </div>
+
+  <div class="page-hero-inner">
+    <div class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span>›</span>
+      <span style="color:var(--ink);">See All Properties</span>
+    </div>
+
+    <p class="hero-eyebrow">Mussoorie · Landour · Curated Collection</p>
+    <h1 class="page-hero-title">Stays that leave a<br><em>lasting stamp</em> on every journey</h1>
+    <p class="page-hero-sub">Explore our handpicked collection of mountain villas, heritage residences, and panoramic ridge suites. Every home is personally inspected, fully equipped for comfort, and attended with dedicated hospitality.</p>
+
+    <!-- Filter & Search Controls -->
+    <div class="filter-section">
+      <div class="filter-pills" id="filterPills">
+        <button class="filter-btn active" data-filter="all">All Properties</button>
+        <button class="filter-btn" data-filter="villa">Villas</button>
+        <button class="filter-btn" data-filter="suite">Suites</button>
+        <button class="filter-btn" data-filter="heritage">Heritage</button>
+        <button class="filter-btn" data-filter="1bhk">1 BHK</button>
+        <button class="filter-btn" data-filter="2bhk">2 BHK</button>
+        <button class="filter-btn" data-filter="3bhk">3–4 BHK</button>
+      </div>
+
+      <div class="search-box-wrap">
+        <svg viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/></svg>
+        <input type="text" id="propSearch" class="search-input" placeholder="Search by name, location...">
+      </div>
+    </div>
+
+    <div class="status-counter-bar">
+      <div>Showing <span class="status-count" id="propCount">all properties</span> in Mussoorie</div>
+      <div id="filterActiveLabel" style="color:var(--ink-soft); font-weight:500;">Collection View</div>
+    </div>
+  </div>
+</header>
+
+<!-- PROPERTIES GRID SECTION (4-COL DESKTOP, 2-COL MOBILE, NO TOP BADGES) -->
+<main class="properties-main">
+  <div class="prop-grid-all" id="propertiesContainer">
+
+    <!-- 1. Delta Cottage -->
+    <article class="prop-card fade-up" data-category="villa 3bhk" data-location="mussoorie-hills" data-name="delta cottage">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="delta%20cottage/Delta.png" alt="Delta Cottage Mussoorie" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Mussoorie Hills · 2,005m</p>
+        <h2 class="prop-name">Delta Cottage</h2>
+        <p class="prop-tagline">3BHK Luxury Mountain Villa</p>
+        <p class="prop-meta">3 Bedrooms · Up to 9 guests · 2,400 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/place/Delta+Cottage+by+Stamp+Stays/@30.4523974,78.0543827,17z/data=!4m8!3m7!1s0x3908d1c18c5116a3:0xce1d4c6137e7a22e!8m2!3d30.4523974!4d78.0569576!9m1!1b1!16s%2Fg%2F11w7fswg6q?entry=ttu&amp;g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹12,000 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=delta-cottage" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/delta-cottage/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 2. Richmond Homes Luxury 3BHK -->
+    <article class="prop-card fade-up d1" data-category="heritage 3bhk" data-location="mall-road" data-name="richmond homes luxury 3bhk">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="richmond%20homes_luxury%203bhk/DSC00158-HDR.jpg" alt="Richmond Homes Luxury 3BHK" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Mall Road · Heritage Zone</p>
+        <h2 class="prop-name">Richmond Homes</h2>
+        <p class="prop-tagline">Luxury 3BHK Heritage Home</p>
+        <p class="prop-meta">3 Bedrooms · Up to 8 guests · 2,200 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/place/Richmond+Home+By+Stamp+Stays/@30.4591696,78.0660323,17z/data=!4m8!3m7!1s0x3908d163346e3137:0x25d23323e7873df7!8m2!3d30.4591696!4d78.0686072!9m1!1b1!16s%2Fg%2F11n537cf_j?entry=ttu&amp;g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹14,500 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=richmond-homes-luxury-3bhk" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/richmond-homes-luxury-3bhk/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 3. Richmond Homes 2BHK -->
+    <article class="prop-card fade-up d2" data-category="heritage 2bhk" data-location="mall-road" data-name="richmond homes 2bhk">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="richmond%20homes_2bhk/DSC00122-HDR_1.jpg" alt="Richmond Homes 2BHK" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Mall Road · Library Chowk</p>
+        <h2 class="prop-name">Richmond Homes</h2>
+        <p class="prop-tagline">Luxury 2BHK Heritage Home</p>
+        <p class="prop-meta">2 Bedrooms · Up to 5 guests · 1,500 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/place/Richmond+Home+By+Stamp+Stays/@30.4591696,78.0660323,17z/data=!4m8!3m7!1s0x3908d163346e3137:0x25d23323e7873df7!8m2!3d30.4591696!4d78.0686072!9m1!1b1!16s%2Fg%2F11n537cf_j?entry=ttu&amp;g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹8,500 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=richmond-homes-luxury-2bhk" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/richmond-homes-luxury-2bhk/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 4. Norbury Suites II -->
+    <article class="prop-card fade-up d3" data-category="suite 2bhk" data-location="camels-back" data-name="norbury suites ii">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="norbury%20suites%20II_2bhk/balcony.jpg" alt="Norbury Suites II Mussoorie" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Camel's Back Road · Mussoorie</p>
+        <h2 class="prop-name">Norbury Suites II</h2>
+        <p class="prop-tagline">2BHK Mountain Ridge Suite</p>
+        <p class="prop-meta">2 Bedrooms · Up to 5 guests · 1,450 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/place/Norbury+Suites+by+Stamp+Stays/@30.4576692,78.0734482,17z/data=!4m12!1m2!2m1!1sNorbury+Suites+II+By+Stamp+Stays!3m8!1s0x3908d1f460145219:0x58b851cf70e0660a!8m2!3d30.4576692!4d78.0782118!9m1!1b1!15sCiBOb3JidXJ5IFN1aXRlcyBJSSBCeSBTdGFtcCBTdGF5c1oiIiBub3JidXJ5IHN1aXRlcyBpaSBieSBzdGFtcCBzdGF5c5IBDGhvbGlkYXlfaG9tZZoBRENpOURRVWxSUVVOdlpFTm9kSGxqUmpsdlQydFNSMlF3Tld4WlZFazBWREJvTlZGV1NtNWxSRUY0VkVaU1ptUnVZeEFC4AEA-gEECEMQKA!16s%2Fg%2F11y2h713j2?entry=ttu&amp;g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹9,500 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=norbury-suites-ii" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/norbury-suites-ii/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 5. Norbury Suites I -->
+    <article class="prop-card fade-up" data-category="suite 2bhk" data-location="camels-back" data-name="norbury suites i">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="norbury%20suites%20I_2bhk/a.jpg" alt="Norbury Suites I Mussoorie" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Camel's Back Promenade</p>
+        <h2 class="prop-name">Norbury Suites I</h2>
+        <p class="prop-tagline">2BHK Mountain Ridge Suite</p>
+        <p class="prop-meta">2 Bedrooms · Up to 5 guests · 1,450 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/place/Norbury+Suites+by+Stamp+Stays/@30.4576692,78.0734482,17z/data=!4m12!1m2!2m1!1sNorbury+Suites+II+By+Stamp+Stays!3m8!1s0x3908d1f460145219:0x58b851cf70e0660a!8m2!3d30.4576692!4d78.0782118!9m1!1b1!16s%2Fg%2F11y2h713j2" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹9,500 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=norbury-suites-i" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/norbury-suites-i/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 6. Norbury Suites 4BHK Grand Suite -->
+    <article class="prop-card fade-up d1" data-category="villa suite 3bhk" data-location="camels-back" data-name="norbury suites 4bhk grand">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="norbury%20suites-4bhk/balcony.jpg" alt="Norbury Suites 4BHK Grand Estate" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Camel's Back Road · Full Villa</p>
+        <h2 class="prop-name">Norbury Suites</h2>
+        <p class="prop-tagline">4BHK Mountain Ridge Villa Suite</p>
+        <p class="prop-meta">4 Bedrooms · Up to 12 guests · 3,100 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/place/Norbury+Suites+by+Stamp+Stays/@30.4576692,78.0734482,17z/data=!4m12!1m2!2m1!1sNorbury+Suites+II+By+Stamp+Stays!3m8!1s0x3908d1f460145219:0x58b851cf70e0660a!8m2!3d30.4576692!4d78.0782118!9m1!1b1!16s%2Fg%2F11y2h713j2" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹18,000 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=norbury-suites" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/norbury-suites/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 7. Fort Suites -->
+    <article class="prop-card fade-up d2" data-category="suite 2bhk" data-location="picture-palace" data-name="fort suites">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="fort%20suites/BR2.jpg" alt="Fort Suites Picture Palace" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Picture Palace · Mussoorie</p>
+        <h2 class="prop-name">Fort Suites</h2>
+        <p class="prop-tagline">2BHK Valley View Boutique Suite</p>
+        <p class="prop-meta">2 Bedrooms · Up to 5 guests · 1,400 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/place/Fort+Suites+by+Stamp+Stays/@30.4485573,78.0839734,17z/data=!4m8!3m7!1s0x3908d1640db456a3:0xff08164a37fde1ec!8m2!3d30.4485573!4d78.0865483!9m1!1b1!16s%2Fg%2F11mykhvbm_?entry=ttu&amp;g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹9,000 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=fort-suites" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/fort-suites/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 8. Kingston Terrace -->
+    <article class="prop-card fade-up d3" data-category="suite 1bhk" data-location="mussoorie-hills" data-name="kingston terrace">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="kingston%20terrace_1bhk/DSC00218-HDR.jpg" alt="Kingston Terrace Mussoorie" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Mussoorie Hills · Private Deck</p>
+        <h2 class="prop-name">Kingston Terrace</h2>
+        <p class="prop-tagline">1BHK Scenic Terrace Apartment</p>
+        <p class="prop-meta">1 Bedroom · Up to 3 guests · 950 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/search/?api=1&amp;query=Kingston%20Terrace%20by%20Stamp%20Stays%20Mussoorie" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹5,500 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=kingston-terrace" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/kingston-terrace/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- 9. Natson House -->
+    <article class="prop-card fade-up" data-category="heritage villa 3bhk" data-location="mussoorie-hills" data-name="natson house">
+      <div class="prop-img-wrap">
+        <img class="prop-photo" src="natson%20house/-DSCF9639-HDR1.jpg" alt="Natson House Colonial Cottage" loading="lazy">
+        <img class="prop-stamp-hover" src="stamp_stays_logo.png" alt="Stamp Stays">
+      </div>
+      <div class="prop-body">
+        <p class="prop-location">Secluded Woods · Mussoorie</p>
+        <h2 class="prop-name">Natson House</h2>
+        <p class="prop-tagline">3BHK Colonial Cottage</p>
+        <p class="prop-meta">3 Bedrooms · Up to 8 guests · 2,300 sq ft</p>
+        <a class="prop-review-link" href="https://www.google.com/maps/place/Natson+House+by+Stamp+Stays/@30.4591367,78.0496105,15z/data=!4m12!1m2!2m1!1sKingston+Terrace+by+Stamp+Stays!3m8!1s0x3908d1fc17d4413d:0x4d180d8f72fe0d70!8m2!3d30.4591367!4d78.0686649!9m1!1b1!15sCh9LaW5nc3RvbiBUZXJyYWNlIGJ5IFN0YW1wIFN0YXlzWiEiH2tpbmdzdG9uIHRlcnJhY2UgYnkgc3RhbXAgc3RheXOSARJwcml2YXRlX2d1ZXN0X3Jvb22aAURDaTlEUVVsUlFVTnZaRU5vZEhsalJqbHZUMjVzYzJGVVRuZGxiR2hYV1ZjMWFGb3pVbnBrUnpsRlpIcE9hVkV4UlJBQuABAPoBBAg2EEY!16s%2Fg%2F11wfy93j68?entry=ttu&amp;g_ep=EgoyMDI2MTEwMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">See all reviews ↗</a>
+        <div class="prop-footer">
+          <div class="prop-price">₹13,500 <span>/ night</span></div>
+          <div class="prop-action-btns">
+            <a href="stampstays_property_page.html?prop=natson-house" class="prop-details-btn">Details ↗</a>
+            <a href="https://app.logout.world/booking/natson-house/" target="_blank" rel="noopener noreferrer" class="prop-book-btn">Book Now</a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <!-- Empty state fallback when filters have no match -->
+  <div class="no-results" id="noResults" style="display:none;">
+    <h3>No properties found</h3>
+    <p>Try clearing your filter or search term to see all available homes in Mussoorie.</p>
+    <button class="reset-filter-btn" onclick="resetFilters()">Reset All Filters</button>
+  </div>
+</main>
+
+<!-- TRUST & QUALITY BAND -->
+<section class="trust-strip">
+  <div class="trust-inner">
+    <div class="trust-card">
+      <img class="trust-card-icon" src="stamp_stays_logo.png" alt="">
+      <h3 class="trust-card-title">Personally Inspected</h3>
+      <p class="trust-card-desc">Every home in our collection is personally inspected and vetted for supreme cleanliness, comfort, and views.</p>
+    </div>
+    <div class="trust-card">
+      <img class="trust-card-icon" src="stamp_stays_logo.png" alt="">
+      <h3 class="trust-card-title">Direct Booking Guarantee</h3>
+      <p class="trust-card-desc">No third-party aggregator markups. Instant direct confirmation with best rates and transparent terms.</p>
+    </div>
+    <div class="trust-card">
+      <img class="trust-card-icon" src="stamp_stays_logo.png" alt="">
+      <h3 class="trust-card-title">Dedicated On-Site Care</h3>
+      <p class="trust-card-desc">A resident caretaker attends each property to ensure warm Himalayan hospitality and prompt assistance.</p>
+    </div>
+    <div class="trust-card">
+      <img class="trust-card-icon" src="stamp_stays_logo.png" alt="">
+      <h3 class="trust-card-title">Scenic Hill Settings</h3>
+      <p class="trust-card-desc">Exclusively in Mussoorie and Landour — perched where birdsong replaces traffic and valley views inspire.</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONCIERGE ASSISTANCE CTA -->
+<section class="concierge-band">
+  <div class="concierge-inner">
+    <img class="concierge-seal" src="stamp_stays_logo.png" alt="Stamp Stays">
+    <p class="concierge-eyebrow">Personalized Mountain Stays</p>
+    <h2 class="concierge-title">Need guidance finding your <em>perfect home</em>?</h2>
+    <p class="concierge-body">Whether you are planning a family reunion, a couple's anniversary, or a quiet creative work retreat, our Mussoorie reservation team is here to assist with tailored recommendations.</p>
+    <div class="concierge-actions">
+      <a href="https://myair.link/stamp-stays" target="_blank" rel="noopener noreferrer" class="concierge-btn-pri">Direct Booking Portal ↗</a>
+      <a href="index.html#story" class="concierge-btn-sec">Learn Our Story</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <img class="footer-wm" src="stamp_stays_logo.png" alt="">
+  <div class="footer-inner">
+    <div>
+      <div class="footer-brand-wrap">
+        <img class="footer-logo" src="stamp_stays_logo.png" alt="Stamp Stays">
+        <div class="footer-brand">Stamp Stays</div>
+      </div>
+      <p class="footer-tagline">A curated collection of boutique homes in the hills of Mussoorie. Handpicked for character, comfort, and soul.</p>
+      <div class="footer-mrz">PINDSTAMPSTAYS&lt;&lt;MUSSOORIE&lt;&lt;UTTARAKHAND&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;&lt;</div>
+    </div>
+    <div>
+      <p class="footer-col-title">Our Stays</p>
+      <ul class="footer-links">
+        <li><a href="stampstays_property_page.html?prop=delta-cottage">Delta Cottage</a></li>
+        <li><a href="stampstays_property_page.html?prop=richmond-homes-luxury-3bhk">Richmond Homes Luxury</a></li>
+        <li><a href="stampstays_property_page.html?prop=richmond-homes-luxury-2bhk">Richmond Homes</a></li>
+        <li><a href="stampstays_property_page.html?prop=norbury-suites-ii">Norbury Suites II</a></li>
+        <li><a href="stampstays_property_page.html?prop=norbury-suites-i">Norbury Suites I</a></li>
+        <li><a href="stampstays_property_page.html?prop=norbury-suites">Norbury Suites</a></li>
+        <li><a href="stampstays_property_page.html?prop=fort-suites">Fort Suites</a></li>
+        <li><a href="stampstays_property_page.html?prop=kingston-terrace">Kingston Terrace</a></li>
+        <li><a href="stampstays_property_page.html?prop=natson-house">Natson House</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-col-title">Direct Portals</p>
+      <ul class="footer-links">
+        <li><a href="property.html">See All Properties</a></li>
+        <li><a href="https://myair.link/stamp-stays" target="_blank" rel="noopener noreferrer">Booking Portal ↗</a></li>
+        <li><a href="https://app.logout.world/booking/delta-cottage/" target="_blank" rel="noopener noreferrer">Logout.world Portal ↗</a></li>
+        <li><a href="index.html#story">Brand Story</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Stamp Stays. All rights reserved.</span>
+    <span>Mussoorie, Uttarakhand, India</span>
+  </div>
+</footer>
+
+<script>
+  // Mobile Navigation Drawer Toggle
+  function toggleMobileNav() {
+    const navLinks = document.getElementById('navLinks');
+    const navToggle = document.getElementById('navToggle');
+    const navBackdrop = document.getElementById('navBackdrop');
+    
+    const isOpen = navLinks.classList.toggle('open');
+    navToggle.classList.toggle('open', isOpen);
+    navBackdrop.classList.toggle('open', isOpen);
+    document.body.style.overflow = isOpen ? 'hidden' : '';
+  }
+
+  function closeMobileNav() {
+    const navLinks = document.getElementById('navLinks');
+    const navToggle = document.getElementById('navToggle');
+    const navBackdrop = document.getElementById('navBackdrop');
+    
+    navLinks.classList.remove('open');
+    navToggle.classList.remove('open');
+    navBackdrop.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+
+  // Sticky nav subtle transition
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 40) {
+      nav.style.boxShadow = '0 6px 22px rgba(27,58,107,0.08)';
+    } else {
+      nav.style.boxShadow = '0 4px 20px rgba(27,58,107,0.04)';
+    }
+  });
+
+  // Intersection Observer for fade-up animations
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.05 });
+  document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+  // Filter & Search Logic
+  const filterBtns = document.querySelectorAll('.filter-btn');
+  const searchInput = document.getElementById('propSearch');
+  const cards = Array.from(document.querySelectorAll('.prop-card'));
+  const noResults = document.getElementById('noResults');
+  const propCount = document.getElementById('propCount');
+  const filterActiveLabel = document.getElementById('filterActiveLabel');
+
+  let currentFilter = 'all';
+  let currentSearch = '';
+  let currentLocation = '';
+
+  // Check URL parameters for loc or filter
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('loc')) {
+    currentLocation = params.get('loc').toLowerCase();
+  }
+  if (params.get('filter')) {
+    currentFilter = params.get('filter').toLowerCase();
+    filterBtns.forEach(btn => {
+      btn.classList.toggle('active', btn.dataset.filter === currentFilter);
+    });
+  }
+
+  function applyFilters() {
+    let visibleCount = 0;
+
+    cards.forEach(card => {
+      const category = (card.dataset.category || '').toLowerCase();
+      const location = (card.dataset.location || '').toLowerCase();
+      const name = (card.dataset.name || '').toLowerCase();
+      const text = card.textContent.toLowerCase();
+
+      // Check Category
+      let matchesFilter = true;
+      if (currentFilter !== 'all') {
+        matchesFilter = category.includes(currentFilter);
+      }
+
+      // Check Location parameter if present
+      let matchesLocation = true;
+      if (currentLocation) {
+        matchesLocation = location.includes(currentLocation);
+      }
+
+      // Check Search text
+      let matchesSearch = true;
+      if (currentSearch) {
+        matchesSearch = text.includes(currentSearch) || name.includes(currentSearch);
+      }
+
+      if (matchesFilter && matchesLocation && matchesSearch) {
+        card.style.display = 'flex';
+        card.classList.add('visible');
+        visibleCount++;
+      } else {
+        card.style.display = 'none';
+      }
+    });
+
+    if (visibleCount === 0) {
+      noResults.style.display = 'block';
+      propCount.textContent = '0 properties';
+    } else {
+      noResults.style.display = 'none';
+      propCount.textContent = `${visibleCount} stay${visibleCount > 1 ? 's' : ''}`;
+    }
+
+    // Update active label
+    if (currentLocation) {
+      filterActiveLabel.textContent = `Location: ${currentLocation.replace('-', ' ').toUpperCase()}`;
+    } else if (currentFilter !== 'all') {
+      filterActiveLabel.textContent = `Filtered: ${currentFilter.toUpperCase()}`;
+    } else if (currentSearch) {
+      filterActiveLabel.textContent = `Search: "${currentSearch}"`;
+    } else {
+      filterActiveLabel.textContent = 'Curated Collection';
+    }
+  }
+
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      currentLocation = '';
+      applyFilters();
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    currentSearch = e.target.value.trim().toLowerCase();
+    applyFilters();
+  });
+
+  function resetFilters() {
+    currentFilter = 'all';
+    currentSearch = '';
+    currentLocation = '';
+    searchInput.value = '';
+    filterBtns.forEach(b => b.classList.remove('active'));
+    filterBtns[0].classList.add('active');
+    applyFilters();
+  }
+
+  // Initial run
+  applyFilters();
+</script>
+</body>
+</html>
